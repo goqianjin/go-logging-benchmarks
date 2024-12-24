@@ -21,13 +21,24 @@ func slogAttrs() []slog.Attr {
 	}
 }
 
-func newSlog(w io.Writer) *slog.Logger {
+func newSlog(w io.Writer, format string) *slog.Logger {
+	if format == "text" {
+		return slog.New(slog.NewTextHandler(w, &slog.HandlerOptions{
+			Level: slog.LevelInfo,
+		}))
+	}
 	return slog.New(slog.NewJSONHandler(w, &slog.HandlerOptions{
 		Level: slog.LevelInfo,
 	}))
+
 }
 
-func newSlogWithCtx(w io.Writer, attr []slog.Attr) *slog.Logger {
+func newSlogWithCtx(w io.Writer, attr []slog.Attr, format string) *slog.Logger {
+	if format == "text" {
+		return slog.New(slog.NewTextHandler(w, &slog.HandlerOptions{
+			Level: slog.LevelInfo,
+		}).WithAttrs(attr))
+	}
 	return slog.New(slog.NewJSONHandler(w, &slog.HandlerOptions{
 		Level: slog.LevelInfo,
 	}).WithAttrs(attr))
@@ -35,22 +46,27 @@ func newSlogWithCtx(w io.Writer, attr []slog.Attr) *slog.Logger {
 
 type slogBench struct {
 	l *slog.Logger
+
+	format string
 }
 
 func (b *slogBench) new(w io.Writer) logBenchmark {
 	return &slogBench{
-		l: newSlog(w),
+		l: newSlog(w, b.format),
 	}
 }
 
 func (b *slogBench) newWithCtx(w io.Writer) logBenchmark {
 	return &slogBench{
-		l: newSlogWithCtx(w, slogAttrs()),
+		l: newSlogWithCtx(w, slogAttrs(), b.format),
 	}
 }
 
 func (b *slogBench) name() string {
-	return "Slog"
+	if b.format == "text" {
+		return "SlogText"
+	}
+	return "SlogJSON"
 }
 
 func (b *slogBench) logEvent(msg string) {

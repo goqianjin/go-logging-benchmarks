@@ -1,0 +1,514 @@
+[
+  {
+    "Date": 1725505182,
+    "Suites": [
+      {
+        "Goos": "darwin",
+        "Goarch": "amd64",
+        "Pkg": "github.com/betterstack-community/go-logging-benchmarks",
+        "Benchmarks": [
+          {
+            "Name": "BenchmarkEvent/SlogJSON-8",
+            "Runs": 145502511,
+            "NsPerOp": 298.2,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEvent/SlogText-8",
+            "Runs": 102984494,
+            "NsPerOp": 340.8,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEvent/XLog-8",
+            "Runs": 150586808,
+            "NsPerOp": 241.9,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEvent/RichXLog-8",
+            "Runs": 61527628,
+            "NsPerOp": 616.8,
+            "Mem": {
+              "BytesPerOp": 280,
+              "AllocsPerOp": 3,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEvent/QXLog-8",
+            "Runs": 28287337,
+            "NsPerOp": 1220,
+            "Mem": {
+              "BytesPerOp": 296,
+              "AllocsPerOp": 4,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabled/SlogJSON-8",
+            "Runs": 1000000000,
+            "NsPerOp": 2.122,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabled/SlogText-8",
+            "Runs": 1000000000,
+            "NsPerOp": 2.199,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabled/XLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 4.105,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabled/RichXLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 4.553,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabled/QXLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 14.22,
+            "Mem": {
+              "BytesPerOp": 16,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventFmt/SlogJSON-8",
+            "Runs": 66366732,
+            "NsPerOp": 545.5,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventFmt/SlogText-8",
+            "Runs": 52431175,
+            "NsPerOp": 740.4,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventFmt/XLog-8",
+            "Runs": 66102828,
+            "NsPerOp": 524.3,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventFmt/RichXLog-8",
+            "Runs": 40227619,
+            "NsPerOp": 881.8,
+            "Mem": {
+              "BytesPerOp": 392,
+              "AllocsPerOp": 4,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventFmt/QXLog-8",
+            "Runs": 24295180,
+            "NsPerOp": 1555,
+            "Mem": {
+              "BytesPerOp": 344,
+              "AllocsPerOp": 3,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledFmt/SlogJSON-8",
+            "Runs": 100000000,
+            "NsPerOp": 303.4,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledFmt/SlogText-8",
+            "Runs": 122155218,
+            "NsPerOp": 297.7,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledFmt/XLog-8",
+            "Runs": 100000000,
+            "NsPerOp": 304,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledFmt/RichXLog-8",
+            "Runs": 100000000,
+            "NsPerOp": 417.2,
+            "Mem": {
+              "BytesPerOp": 112,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledFmt/QXLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 1.198,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtx/SlogJSON-8",
+            "Runs": 9618310,
+            "NsPerOp": 4014,
+            "Mem": {
+              "BytesPerOp": 2394,
+              "AllocsPerOp": 28,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtx/SlogText-8",
+            "Runs": 4503798,
+            "NsPerOp": 8992,
+            "Mem": {
+              "BytesPerOp": 3340,
+              "AllocsPerOp": 117,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtx/XLog-8",
+            "Runs": 5632695,
+            "NsPerOp": 6239,
+            "Mem": {
+              "BytesPerOp": 4233,
+              "AllocsPerOp": 110,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtx/RichXLog-8",
+            "Runs": 5446996,
+            "NsPerOp": 7329,
+            "Mem": {
+              "BytesPerOp": 4836,
+              "AllocsPerOp": 114,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtx/QXLog-8",
+            "Runs": 5747284,
+            "NsPerOp": 7116,
+            "Mem": {
+              "BytesPerOp": 4287,
+              "AllocsPerOp": 106,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtx/SlogJSON-8",
+            "Runs": 128429115,
+            "NsPerOp": 249.5,
+            "Mem": {
+              "BytesPerOp": 504,
+              "AllocsPerOp": 5,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtx/SlogText-8",
+            "Runs": 150910646,
+            "NsPerOp": 278,
+            "Mem": {
+              "BytesPerOp": 504,
+              "AllocsPerOp": 5,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtx/XLog-8",
+            "Runs": 95945619,
+            "NsPerOp": 418.1,
+            "Mem": {
+              "BytesPerOp": 696,
+              "AllocsPerOp": 14,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtx/RichXLog-8",
+            "Runs": 95305164,
+            "NsPerOp": 353.7,
+            "Mem": {
+              "BytesPerOp": 696,
+              "AllocsPerOp": 14,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtx/QXLog-8",
+            "Runs": 7698932,
+            "NsPerOp": 4683,
+            "Mem": {
+              "BytesPerOp": 3026,
+              "AllocsPerOp": 103,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtxWeak/SlogJSON-8",
+            "Runs": 10637857,
+            "NsPerOp": 3343,
+            "Mem": {
+              "BytesPerOp": 2066,
+              "AllocsPerOp": 31,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtxWeak/SlogText-8",
+            "Runs": 5135210,
+            "NsPerOp": 7569,
+            "Mem": {
+              "BytesPerOp": 3013,
+              "AllocsPerOp": 120,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtxWeak/XLog-8",
+            "Runs": 5993794,
+            "NsPerOp": 6238,
+            "Mem": {
+              "BytesPerOp": 4005,
+              "AllocsPerOp": 105,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtxWeak/RichXLog-8",
+            "Runs": 6455888,
+            "NsPerOp": 7607,
+            "Mem": {
+              "BytesPerOp": 4285,
+              "AllocsPerOp": 108,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventCtxWeak/QXLog-8",
+            "Runs": 6538686,
+            "NsPerOp": 5032,
+            "Mem": {
+              "BytesPerOp": 3277,
+              "AllocsPerOp": 87,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtxWeak/SlogJSON-8",
+            "Runs": 314115056,
+            "NsPerOp": 124.9,
+            "Mem": {
+              "BytesPerOp": 176,
+              "AllocsPerOp": 8,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtxWeak/SlogText-8",
+            "Runs": 235834288,
+            "NsPerOp": 143.5,
+            "Mem": {
+              "BytesPerOp": 176,
+              "AllocsPerOp": 8,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtxWeak/XLog-8",
+            "Runs": 161824790,
+            "NsPerOp": 232.6,
+            "Mem": {
+              "BytesPerOp": 464,
+              "AllocsPerOp": 9,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtxWeak/RichXLog-8",
+            "Runs": 164728354,
+            "NsPerOp": 246.5,
+            "Mem": {
+              "BytesPerOp": 464,
+              "AllocsPerOp": 9,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledCtxWeak/QXLog-8",
+            "Runs": 279962610,
+            "NsPerOp": 119.8,
+            "Mem": {
+              "BytesPerOp": 176,
+              "AllocsPerOp": 8,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventAccumulatedCtx/SlogJSON-8",
+            "Runs": 130452673,
+            "NsPerOp": 323.2,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventAccumulatedCtx/SlogText-8",
+            "Runs": 100000000,
+            "NsPerOp": 320.1,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventAccumulatedCtx/XLog-8",
+            "Runs": 169102291,
+            "NsPerOp": 211.4,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventAccumulatedCtx/RichXLog-8",
+            "Runs": 78604202,
+            "NsPerOp": 425.2,
+            "Mem": {
+              "BytesPerOp": 280,
+              "AllocsPerOp": 3,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkEventAccumulatedCtx/QXLog-8",
+            "Runs": 29104058,
+            "NsPerOp": 1318,
+            "Mem": {
+              "BytesPerOp": 296,
+              "AllocsPerOp": 4,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledAccumulatedCtx/SlogJSON-8",
+            "Runs": 1000000000,
+            "NsPerOp": 2.064,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledAccumulatedCtx/SlogText-8",
+            "Runs": 1000000000,
+            "NsPerOp": 2.122,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledAccumulatedCtx/XLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 6.37,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledAccumulatedCtx/RichXLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 8.626,
+            "Mem": {
+              "BytesPerOp": 0,
+              "AllocsPerOp": 0,
+              "MBPerSec": 0
+            }
+          },
+          {
+            "Name": "BenchmarkDisabledAccumulatedCtx/QXLog-8",
+            "Runs": 1000000000,
+            "NsPerOp": 18.7,
+            "Mem": {
+              "BytesPerOp": 16,
+              "AllocsPerOp": 1,
+              "MBPerSec": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
